@@ -12,7 +12,7 @@ public class EntregaGratuitaSteps {
     }
 
     @When("^realiza la compra de (.*) (.*)$")
-    public void agregaProductosAlPedido(Integer cantidad, String producto) {
+    public void realizarLaCompraDeLibros(Integer cantidad, String producto) {
 
     }
 
