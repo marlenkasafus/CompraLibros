@@ -19,3 +19,8 @@ Feature: Entrega gratuita por compra de libros
     When realiza la compra de 5 libros
     Then debe pagar 100
 
+  Scenario: Un cliente VIP pidiendo 4 libros debe pagar envio
+    Given el comprador es un cliente VIP
+    When realiza la compra de 4 libros
+    Then debe pagar 100
+
