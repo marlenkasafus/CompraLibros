@@ -14,3 +14,8 @@ Feature: Entrega gratuita por compra de libros
     When realiza la compra de 5 libros
     Then debe pagar 0
 
+  Scenario: Un cliente STANDARD pidiendo 5 libros debe pagar 100 de envio
+    Given el comprador es un cliente STANDARD
+    When realiza la compra de 5 libros
+    Then debe pagar 100
+

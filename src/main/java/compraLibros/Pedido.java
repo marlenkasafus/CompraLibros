@@ -1,8 +1,10 @@
 package compraLibros;
 
 public class Pedido {
-    public Pedido(String tipoCliente) {
+    private String tipoCliente;
 
+    public Pedido(String tipoCliente) {
+        this.tipoCliente = tipoCliente;
     }
 
     public void agregarProducto(Integer cantidad, String producto) {
@@ -10,6 +12,9 @@ public class Pedido {
     }
 
     public int calcularCostoEnvio() {
+        if (tipoCliente.equals("STANDARD")) {
+            return 100;
+        }
         return 0;
     }
 }
