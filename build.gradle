@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile "net.serenity-bdd:serenity-core:2.0.64",
+            "net.serenity-bdd:serenity-cucumber4:1.0.19",
+            "io.cucumber:cucumber-core:4.2.0",
+            "io.cucumber:cucumber-junit:4.2.0"
+
+    // Other dependencies
+    testCompile "org.slf4j:slf4j-api:1.7.5",
+            "junit:junit:4.12",
+            "org.assertj:assertj-core:1.7.0"
+}
