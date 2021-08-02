@@ -9,3 +9,8 @@ Feature: Entrega gratuita por compra de libros
   El numero minimo de libros para obtener entrega gratuita es 5
   El valor del envio es 100
 
+  Scenario: Un cliente VIP pidiendo 5 libros no debe pagar envio
+    Given el comprador es un cliente VIP
+    When realiza la compra de 5 libros
+    Then debe pagar 0
+
